@@ -2,6 +2,7 @@
 Program do porównywania wyników swojego programu z prawidłowymi wynikami
 
 Wywoływanie programu jest identyczne jak projektu, w terminalu stostujemy komendę:
+
 python3 compare.py <our_results_dir> <results_OK_dir>
 
 Np.
