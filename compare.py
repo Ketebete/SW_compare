@@ -83,11 +83,12 @@ def main():
     prGreen(all_sum)
     print("Skuteczność programu: ", end='')
     prGreen(round((all_sum-error_sum)/all_sum, 3))
-    print("\n\n")
+    print("\n\nKolor\t\tOK odczyty\tskutecznosc\tbłędy/wszystkie_błędy")
+
 
     for i in range(0, 15):
         print(gummy_col[i], gummies_all[i]-gummies_err[i], "/", gummies_all[i], "\t",
-              round((gummies_all[i] - gummies_err[i]) / gummies_all[i], 2), "\t", round((gummies_err[i]) / error_sum, 3))
+              round((gummies_all[i] - gummies_err[i]) / gummies_all[i], 2), "\t\t", round((gummies_err[i]) / error_sum, 3))
 
 if __name__ == '__main__':
     main()
